@@ -1,0 +1,39 @@
+{
+  "vehicles": [
+    {
+      "name": "M48A2 G A2",
+      "nation": "Alemania",
+      "type": "Tanque",
+      "br": null,
+      "role": "Tanque medio"
+    },
+    {
+      "name": "Leopard 2A4",
+      "nation": "Alemania",
+      "type": "Tanque",
+      "br": null,
+      "role": "Carro de combate principal"
+    },
+    {
+      "name": "M1 Abrams",
+      "nation": "Estados Unidos",
+      "type": "Tanque",
+      "br": null,
+      "role": "Carro de combate principal"
+    },
+    {
+      "name": "T-72B",
+      "nation": "URSS",
+      "type": "Tanque",
+      "br": null,
+      "role": "Carro de combate principal"
+    },
+    {
+      "name": "F-16A",
+      "nation": "Estados Unidos",
+      "type": "Avión",
+      "br": null,
+      "role": "Caza"
+    }
+  ]
+}
