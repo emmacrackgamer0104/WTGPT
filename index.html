@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WTGPT — War Thunder Intelligence & Analytics">
+  <title>WTGPT — War Thunder Intelligence & Analytics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <div>
+      <span class="brand">WTGPT</span>
+      <span class="subtitle">WAR THUNDER INTELLIGENCE & ANALYTICS</span>
+    </div>
+    <span class="status"><i></i> SYSTEM ONLINE</span>
+  </header>
+
+  <main class="layout">
+    <section class="hero panel">
+      <p class="eyebrow">INTELLIGENCE TERMINAL</p>
+      <h1>Analiza. Compara. <span>Domina.</span></h1>
+      <p class="hero-text">Una interfaz para consultar vehículos y construir lineups coherentes a partir de datos verificados.</p>
+
+      <div class="query-box">
+        <label for="vehicleInput">VEHÍCULO BASE</label>
+        <input id="vehicleInput" list="vehicleList" placeholder="Ej.: Leopard 2A4" autocomplete="off">
+        <datalist id="vehicleList"></datalist>
+        <div class="controls">
+          <select id="mode">
+            <option>Ground RB</option>
+            <option>Ground AB</option>
+            <option>Air RB</option>
+            <option>Air AB</option>
+            <option>Naval RB</option>
+            <option>Naval AB</option>
+          </select>
+          <button id="analyzeBtn">ANALIZAR VEHÍCULO</button>
+          <button id="lineupBtn" class="primary">GENERAR LINEUP</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel database">
+      <p class="eyebrow">DATABASE</p>
+      <div class="metric"><strong id="vehicleCount">—</strong><span>VEHÍCULOS</span></div>
+      <div class="metric"><strong id="verifiedCount">—</strong><span>BR VERIFICADOS</span></div>
+      <div class="data-note">Los datos no verificados no se inventan.</div>
+    </aside>
+
+    <section id="output" class="panel output">
+      <div class="empty-state">
+        <span class="crosshair">⊕</span>
+        <h2>ESPERANDO CONSULTA</h2>
+        <p>Selecciona un vehículo para iniciar el análisis.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>WTGPT // EARLY DEVELOPMENT // PYTHON + JSON DATA CORE</footer>
+  <script src="app.js"></script>
+</body>
+</html>
