@@ -1,6 +1,6 @@
 ---
 name: Agregar vehículo
-a bout: Proponer un nuevo vehículo para la base de datos
+about: Proponer un nuevo vehículo para la base de datos
 ---
 
 ## 🚗 Nuevo vehículo
