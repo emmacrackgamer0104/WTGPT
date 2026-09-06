@@ -1,5 +1,6 @@
 const output = document.getElementById('output');
 const vehicleInput = document.getElementById('vehicleInput');
+const lineupInput = document.getElementById('lineupInput');
 const vehicleList = document.getElementById('vehicleList');
 const mode = document.getElementById('mode');
 let vehicles = [];
@@ -69,6 +70,41 @@ function generateLineup() {
   output.innerHTML = `<div class="result-head"><div><p class="eyebrow">LINEUP INTELLIGENCE</p><h2>Lineup recomendado</h2><p class="hero-text">Base: ${escapeHtml(base.name)} · ${escapeHtml(mode.value)} · BR ${base.br}</p></div><span class="badge">${escapeHtml(base.nation)}</span></div><div class="cards">${selected.map((v,i)=>card(v,i===0)).join('')}</div>`;
 }
 
+function searchExactLineup() {
+  const raw = lineupInput.value.trim();
+  if (!raw) {
+    output.innerHTML = `<div class="warning"><strong>LINEUP VACÍO</strong><br>Introduce los vehículos separados por comas.</div>`;
+    return;
+  }
+
+  const names = raw.split(',').map(s => s.trim()).filter(Boolean);
+  const found = [];
+  const missing = [];
+  const seen = new Set();
+
+  for (const name of names) {
+    const key = normalize(name);
+    if (seen.has(key)) continue;
+    seen.add(key);
+    const vehicle = findVehicle(name);
+    if (vehicle) found.push(vehicle);
+    else missing.push(name);
+  }
+
+  if (missing.length) {
+    output.innerHTML = `<div class="warning"><strong>LINEUP NO ENCONTRADO</strong><br>No se pudo verificar el lineup exacto porque faltan en la base de datos:<br><br>${missing.map(escapeHtml).join('<br>')}</div>`;
+    return;
+  }
+
+  const nations = [...new Set(found.map(v => normalize(v.nation)).filter(Boolean))];
+  const brs = found.map(v => v.br).filter(br => typeof br === 'number');
+  const brText = brs.length === found.length ? `BR ${Math.min(...brs).toFixed(1)}–${Math.max(...brs).toFixed(1)}` : 'BR pendiente en uno o más vehículos';
+  const nationText = nations.length === 1 ? found[0].nation : 'Naciones mixtas';
+  const roles = [...new Set(found.map(role))];
+
+  output.innerHTML = `<div class="result-head"><div><p class="eyebrow">EXACT LINEUP SEARCH</p><h2>Lineup verificado</h2><p class="hero-text">${found.length} vehículos · ${escapeHtml(nationText)} · ${escapeHtml(brText)}</p></div><span class="badge">COINCIDENCIA EXACTA</span></div><div class="cards">${found.map((v,i)=>card(v,i===0)).join('')}</div><div class="data-note">Roles detectados: ${escapeHtml(roles.join(', '))}.</div>`;
+}
+
 async function loadDatabase() {
   try {
     const response = await fetch('vehicles.json', { cache: 'no-store' });
@@ -87,5 +123,7 @@ async function loadDatabase() {
 
 document.getElementById('analyzeBtn').addEventListener('click', analyze);
 document.getElementById('lineupBtn').addEventListener('click', generateLineup);
+document.getElementById('exactLineupBtn').addEventListener('click', searchExactLineup);
 vehicleInput.addEventListener('keydown', e => { if (e.key === 'Enter') analyze(); });
+lineupInput.addEventListener('keydown', e => { if (e.key === 'Enter') searchExactLineup(); });
 loadDatabase();
