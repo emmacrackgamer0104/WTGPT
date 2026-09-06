@@ -1,6 +1,8 @@
 import json
 import os
 
+from lineup_engine import generar_lineup
+
 # ─────────────────────────────────────────────────────────────
 # WTGPT — War Thunder Intelligence & Analytics
 # Tema visual: HUD militar / dashboard tecnológico
@@ -53,7 +55,8 @@ def mostrar_menu():
     print(f"{ORANGE}{BOLD}│{RESET}  {ORANGE}2{RESET}  Comparar vehículos             {ORANGE}{BOLD}│{RESET}")
     print(f"{ORANGE}{BOLD}│{RESET}  {ORANGE}3{RESET}  Economía                        {ORANGE}{BOLD}│{RESET}")
     print(f"{ORANGE}{BOLD}│{RESET}  {ORANGE}4{RESET}  Estadísticas                    {ORANGE}{BOLD}│{RESET}")
-    print(f"{ORANGE}{BOLD}│{RESET}  {ORANGE}5{RESET}  Salir                           {ORANGE}{BOLD}│{RESET}")
+    print(f"{ORANGE}{BOLD}│{RESET}  {ORANGE}5{RESET}  Recomendar lineup               {ORANGE}{BOLD}│{RESET}")
+    print(f"{ORANGE}{BOLD}│{RESET}  {ORANGE}6{RESET}  Salir                           {ORANGE}{BOLD}│{RESET}")
     print(f"{ORANGE}{BOLD}└──────────────────────────────────────┘{RESET}")
 
 
@@ -72,6 +75,44 @@ def analizar_vehiculo(vehiculos):
     print(f"{LIGHT}  Rol    :{RESET} {encontrado.get('role', 'N/D')}")
     print(f"{LIGHT}  BR     :{RESET} {encontrado.get('br') or 'Pendiente de datos'}")
     print(f"{ORANGE}{BOLD}└──────────────────────────────────────────┘{RESET}\n")
+
+
+def recomendar_lineup(vehiculos):
+    print(f"\n{ORANGE}{BOLD}┌── LINEUP INTELLIGENCE ──────────────────┐{RESET}")
+    nombre = input(f"{LIGHT}  Vehículo base (ENTER para usar BR):{RESET} ").strip()
+    modo = input(f"{LIGHT}  Modo (ej. Ground RB):{RESET} ").strip() or "Ground RB"
+
+    if nombre:
+        resultado = generar_lineup(vehiculos, vehiculo_base=nombre, modo=modo)
+    else:
+        nacion = input(f"{LIGHT}  Nación:{RESET} ").strip()
+        br_texto = input(f"{LIGHT}  BR objetivo:{RESET} ").strip()
+        try:
+            br = float(br_texto)
+        except ValueError:
+            print(f"\n{RED}✖ BR no válido.{RESET}\n")
+            return
+        resultado = generar_lineup(vehiculos, nacion=nacion, target_br=br, modo=modo)
+
+    print(f"{ORANGE}{BOLD}└──────────────────────────────────────────┘{RESET}")
+
+    if resultado["status"] != "ok":
+        print(f"\n{RED}✖ {resultado['message']}{RESET}\n")
+        if resultado.get("base"):
+            base = resultado["base"]
+            print(f"{DIM}Vehículo detectado: {base.get('name')} | Estado: {base.get('availability', 'no indicado')}{RESET}\n")
+        return
+
+    print(f"\n{GREEN}{BOLD}✓ LINEUP RECOMENDADO{RESET}")
+    print(f"{DIM}Modo: {resultado['mode']} | Nación: {resultado['nation']} | BR de referencia: {resultado['target_br']}{RESET}\n")
+
+    for numero, vehiculo in enumerate(resultado["lineup"], start=1):
+        marca = " ← BASE" if resultado.get("base") is vehiculo else ""
+        print(
+            f"{ORANGE}{numero}.{RESET} {LIGHT}{vehiculo.get('name', 'N/D')}{RESET} "
+            f"— {vehiculo.get('role', 'Rol no indicado')}" + marca
+        )
+    print()
 
 
 def ejecutar():
@@ -97,12 +138,15 @@ def ejecutar():
             print(f"\n{ORANGE}[WTGPT]{RESET} Estadísticas: próximamente.\n")
             input(f"{DIM}Pulsa ENTER para volver al menú...{RESET}")
         elif opcion == "5":
+            recomendar_lineup(vehiculos)
+            input(f"{DIM}Pulsa ENTER para volver al menú...{RESET}")
+        elif opcion == "6":
             limpiar_pantalla()
             print(f"\n{ORANGE}{BOLD}WTGPT{RESET} cerrado. ¡Nos vemos en el campo de batalla! 🎮\n")
             break
         else:
             print(f"\n{RED}✖ Opción no válida. Inténtalo de nuevo.{RESET}")
-            input(f"{DIM}Pulsa ENTER para continuar...{RESET}")
+            input(f"{DIM}Pulsa ENTER para continuar...")
 
 
 if __name__ == "__main__":
