@@ -40,7 +40,9 @@
       "nation": "Alemania",
       "type": "Tanque",
       "rank": "IV",
-      "br": null,
+      "br": 5.7,
+      "br_ab": 5.7,
+      "br_sb": 5.7,
       "role": "Cañón autopropulsado",
       "availability": "regular"
     },
@@ -49,7 +51,9 @@
       "nation": "Alemania",
       "type": "Tanque pesado",
       "rank": "IV",
-      "br": null,
+      "br": 6.3,
+      "br_ab": 6.3,
+      "br_sb": 6.3,
       "role": "Tanque pesado",
       "availability": "regular"
     },
@@ -58,7 +62,9 @@
       "nation": "Alemania",
       "type": "Tanque pesado",
       "rank": "IV",
-      "br": null,
+      "br": 6.7,
+      "br_ab": 7.0,
+      "br_sb": 6.7,
       "role": "Tanque pesado",
       "availability": "regular"
     },
@@ -67,7 +73,9 @@
       "nation": "Alemania",
       "type": "Tanque",
       "rank": "IV",
-      "br": null,
+      "br": 6.0,
+      "br_ab": 6.0,
+      "br_sb": 6.0,
       "role": "Tanque medio",
       "availability": "regular"
     },
@@ -76,7 +84,9 @@
       "nation": "Alemania",
       "type": "Tanque",
       "rank": "IV",
-      "br": null,
+      "br": 6.0,
+      "br_ab": 6.0,
+      "br_sb": 6.0,
       "role": "Tanque medio",
       "availability": "regular"
     },
@@ -85,7 +95,9 @@
       "nation": "Alemania",
       "type": "Tanque",
       "rank": "IV",
-      "br": null,
+      "br": 6.0,
+      "br_ab": 6.0,
+      "br_sb": 6.0,
       "role": "Tanque medio",
       "availability": "regular"
     },
@@ -94,7 +106,9 @@
       "nation": "Alemania",
       "type": "SPAA",
       "rank": "IV",
-      "br": null,
+      "br": 6.0,
+      "br_ab": 6.0,
+      "br_sb": 6.0,
       "role": "Antiaéreo",
       "availability": "regular"
     },
@@ -103,7 +117,9 @@
       "nation": "Alemania",
       "type": "SPAA",
       "rank": "IV",
-      "br": null,
+      "br": 6.7,
+      "br_ab": 6.7,
+      "br_sb": 6.7,
       "role": "Antiaéreo",
       "availability": "regular"
     },
@@ -112,7 +128,9 @@
       "nation": "Alemania",
       "type": "Cazacarros",
       "rank": "IV",
-      "br": null,
+      "br": 6.3,
+      "br_ab": 6.3,
+      "br_sb": 6.3,
       "role": "Antitanque",
       "availability": "regular"
     },
@@ -121,7 +139,9 @@
       "nation": "Alemania",
       "type": "Cazacarros",
       "rank": "IV",
-      "br": null,
+      "br": 6.3,
+      "br_ab": 6.3,
+      "br_sb": 6.3,
       "role": "Antitanque",
       "availability": "regular"
     },
@@ -130,7 +150,9 @@
       "nation": "Alemania",
       "type": "Cazacarros",
       "rank": "IV",
-      "br": null,
+      "br": 6.7,
+      "br_ab": 7.0,
+      "br_sb": 6.7,
       "role": "Antitanque",
       "availability": "regular"
     },
@@ -139,7 +161,9 @@
       "nation": "Alemania",
       "type": "Cazacarros",
       "rank": "IV",
-      "br": null,
+      "br": 6.7,
+      "br_ab": 7.3,
+      "br_sb": 6.7,
       "role": "Antitanque",
       "availability": "regular"
     },
@@ -148,7 +172,9 @@
       "nation": "Alemania",
       "type": "Tanque ligero",
       "rank": "IV",
-      "br": null,
+      "br": 6.7,
+      "br_ab": 6.3,
+      "br_sb": 6.7,
       "role": "Explorador",
       "availability": "regular"
     },
@@ -157,7 +183,9 @@
       "nation": "Alemania",
       "type": "Tanque pesado",
       "rank": "IV",
-      "br": null,
+      "br": 5.7,
+      "br_ab": 5.7,
+      "br_sb": 5.7,
       "role": "Tanque pesado",
       "availability": "premium"
     },
@@ -166,16 +194,20 @@
       "nation": "Alemania",
       "type": "Tanque",
       "rank": "IV",
-      "br": null,
+      "br": 6.0,
+      "br_ab": 6.0,
+      "br_sb": 6.0,
       "role": "Tanque medio",
-      "availability": "premium"
+      "availability": "evento"
     },
     {
       "name": "38 cm Sturmmörser",
       "nation": "Alemania",
       "type": "Cañón autopropulsado",
       "rank": "IV",
-      "br": null,
+      "br": 5.7,
+      "br_ab": 6.0,
+      "br_sb": 6.3,
       "role": "Asalto",
       "availability": "evento"
     },
@@ -184,7 +216,9 @@
       "nation": "Alemania",
       "type": "Cazacarros",
       "rank": "IV",
-      "br": null,
+      "br": 6.3,
+      "br_ab": 6.3,
+      "br_sb": 6.3,
       "role": "Antitanque",
       "availability": "premium"
     },
@@ -193,7 +227,9 @@
       "nation": "Alemania",
       "type": "Cazacarros",
       "rank": "IV",
-      "br": null,
+      "br": 6.7,
+      "br_ab": 7.0,
+      "br_sb": 6.7,
       "role": "Antitanque",
       "availability": "premium"
     },
@@ -202,25 +238,31 @@
       "nation": "Alemania",
       "type": "Tanque medio",
       "rank": "IV",
-      "br": null,
+      "br": 7.0,
+      "br_ab": 7.0,
+      "br_sb": 7.0,
       "role": "Tanque medio",
-      "availability": "premium"
+      "availability": "retirado"
     },
     {
       "name": "Flakpanzer 341",
       "nation": "Alemania",
       "type": "SPAA",
       "rank": "IV",
-      "br": null,
+      "br": 7.0,
+      "br_ab": 7.0,
+      "br_sb": 7.0,
       "role": "Antiaéreo",
-      "availability": "premium"
+      "availability": "retirado"
     },
     {
       "name": "Tiger II (Sla.16)",
       "nation": "Alemania",
       "type": "Tanque pesado",
       "rank": "IV",
-      "br": null,
+      "br": 6.7,
+      "br_ab": 7.0,
+      "br_sb": 6.7,
       "role": "Tanque pesado",
       "availability": "premium"
     },
@@ -229,25 +271,31 @@
       "nation": "Alemania",
       "type": "Tanque pesado",
       "rank": "IV",
-      "br": null,
+      "br": 7.0,
+      "br_ab": 7.0,
+      "br_sb": 7.0,
       "role": "Tanque pesado",
-      "availability": "premium"
+      "availability": "retirado"
     },
     {
       "name": "SPz 12-3 LGS",
       "nation": "Alemania",
       "type": "Tanque ligero",
       "rank": "IV",
-      "br": null,
+      "br": 7.0,
+      "br_ab": 7.0,
+      "br_sb": 7.0,
       "role": "Explorador",
-      "availability": "premium"
+      "availability": "Battle Pass"
     },
     {
       "name": "Ru 251",
       "nation": "Alemania",
       "type": "Tanque ligero",
       "rank": "IV",
-      "br": null,
+      "br": 7.3,
+      "br_ab": 7.0,
+      "br_sb": 7.3,
       "role": "Explorador",
       "availability": "premium"
     }
