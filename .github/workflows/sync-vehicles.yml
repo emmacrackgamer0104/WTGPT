@@ -1,0 +1,39 @@
+name: Sync War Thunder vehicles
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install requests
+
+      - name: Synchronize vehicle database
+        run: python scripts/sync_vehicles.py
+
+      - name: Commit database changes
+        run: |
+          if git diff --quiet -- vehicles.json; then
+            echo "No vehicle database changes."
+            exit 0
+          fi
+          git config user.name "WTGPT Data Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vehicles.json
+          git commit -m "Sync War Thunder vehicle database"
+          git push
