@@ -10,10 +10,7 @@
 <body>
   <div class="scanlines"></div>
   <header class="topbar">
-    <div>
-      <span class="brand">WTGPT</span>
-      <span class="subtitle">WAR THUNDER INTELLIGENCE & ANALYTICS</span>
-    </div>
+    <div><span class="brand">WTGPT</span><span class="subtitle">WAR THUNDER INTELLIGENCE & ANALYTICS</span></div>
     <span class="status"><i></i> SYSTEM ONLINE</span>
   </header>
 
@@ -21,24 +18,27 @@
     <section class="hero panel">
       <p class="eyebrow">INTELLIGENCE TERMINAL</p>
       <h1>Analiza. Compara. <span>Domina.</span></h1>
-      <p class="hero-text">Consulta vehículos, busca lineups exactos y construye combinaciones coherentes a partir de datos verificados.</p>
+      <p class="hero-text">Consulta vehículos, busca lineups exactos y detecta saltos tecnológicos antes de entrar en batalla.</p>
 
       <div class="query-box">
         <label for="vehicleInput">VEHÍCULO BASE</label>
         <input id="vehicleInput" list="vehicleList" placeholder="Ej.: Leopard 2A4" autocomplete="off">
         <datalist id="vehicleList"></datalist>
         <div class="controls">
-          <select id="mode">
-            <option>Ground RB</option>
-            <option>Ground AB</option>
-            <option>Air RB</option>
-            <option>Air AB</option>
-            <option>Naval RB</option>
-            <option>Naval AB</option>
-          </select>
+          <select id="mode"><option>Ground RB</option><option>Ground AB</option><option>Air RB</option><option>Air AB</option><option>Naval RB</option><option>Naval AB</option></select>
           <button id="analyzeBtn">ANALIZAR VEHÍCULO</button>
           <button id="lineupBtn" class="primary">GENERAR LINEUP</button>
         </div>
+      </div>
+
+      <div class="query-box">
+        <label>PREPARACIÓN DEL JUGADOR</label>
+        <div class="controls">
+          <input id="playerRank" type="number" min="1" max="10" placeholder="Tu rango (1–10)">
+          <input id="playerBr" type="number" min="0" max="20" step="0.1" placeholder="Tu BR habitual">
+          <button id="readinessBtn" class="primary">DETECTAR SALTO</button>
+        </div>
+        <p class="data-note">Compara tu progresión habitual con el vehículo seleccionado. Tener un vehículo de escuadrón/evento no se interpreta automáticamente como estar preparado para su BR.</p>
       </div>
 
       <div class="query-box exact-lineup-box">
@@ -57,11 +57,7 @@
     </aside>
 
     <section id="output" class="panel output">
-      <div class="empty-state">
-        <span class="crosshair">⊕</span>
-        <h2>ESPERANDO CONSULTA</h2>
-        <p>Selecciona un vehículo o busca un lineup exacto.</p>
-      </div>
+      <div class="empty-state"><span class="crosshair">⊕</span><h2>ESPERANDO CONSULTA</h2><p>Selecciona un vehículo o detecta un salto tecnológico.</p></div>
     </section>
   </main>
 
