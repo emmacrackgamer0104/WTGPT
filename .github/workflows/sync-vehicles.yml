@@ -1,6 +1,10 @@
 name: Sync War Thunder vehicles
 
 on:
+  push:
+    paths:
+      - "scripts/sync_vehicles.py"
+      - ".github/workflows/sync-vehicles.yml"
   workflow_dispatch:
   schedule:
     - cron: "17 4 * * 1"
