@@ -34,6 +34,222 @@
       "type": "Avión",
       "br": null,
       "role": "Caza"
+    },
+    {
+      "name": "M109G",
+      "nation": "Alemania",
+      "type": "Tanque",
+      "rank": "IV",
+      "br": null,
+      "role": "Cañón autopropulsado",
+      "availability": "regular"
+    },
+    {
+      "name": "Tiger II (Nr.1-50)",
+      "nation": "Alemania",
+      "type": "Tanque pesado",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque pesado",
+      "availability": "regular"
+    },
+    {
+      "name": "Tiger II",
+      "nation": "Alemania",
+      "type": "Tanque pesado",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque pesado",
+      "availability": "regular"
+    },
+    {
+      "name": "Panther A",
+      "nation": "Alemania",
+      "type": "Tanque",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque medio",
+      "availability": "regular"
+    },
+    {
+      "name": "Panther G",
+      "nation": "Alemania",
+      "type": "Tanque",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque medio",
+      "availability": "regular"
+    },
+    {
+      "name": "Panther F",
+      "nation": "Alemania",
+      "type": "Tanque",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque medio",
+      "availability": "regular"
+    },
+    {
+      "name": "Zerstörer 45",
+      "nation": "Alemania",
+      "type": "SPAA",
+      "rank": "IV",
+      "br": null,
+      "role": "Antiaéreo",
+      "availability": "regular"
+    },
+    {
+      "name": "Kugelblitz",
+      "nation": "Alemania",
+      "type": "SPAA",
+      "rank": "IV",
+      "br": null,
+      "role": "Antiaéreo",
+      "availability": "regular"
+    },
+    {
+      "name": "Jagdpanther G1",
+      "nation": "Alemania",
+      "type": "Cazacarros",
+      "rank": "IV",
+      "br": null,
+      "role": "Antitanque",
+      "availability": "regular"
+    },
+    {
+      "name": "JPz 4-5",
+      "nation": "Alemania",
+      "type": "Cazacarros",
+      "rank": "IV",
+      "br": null,
+      "role": "Antitanque",
+      "availability": "regular"
+    },
+    {
+      "name": "Ferdinand",
+      "nation": "Alemania",
+      "type": "Cazacarros",
+      "rank": "IV",
+      "br": null,
+      "role": "Antitanque",
+      "availability": "regular"
+    },
+    {
+      "name": "Jagdtiger",
+      "nation": "Alemania",
+      "type": "Cazacarros",
+      "rank": "IV",
+      "br": null,
+      "role": "Antitanque",
+      "availability": "regular"
+    },
+    {
+      "name": "leKPz M41",
+      "nation": "Alemania",
+      "type": "Tanque ligero",
+      "rank": "IV",
+      "br": null,
+      "role": "Explorador",
+      "availability": "regular"
+    },
+    {
+      "name": "Pz.Bef.Wg.VI P",
+      "nation": "Alemania",
+      "type": "Tanque pesado",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque pesado",
+      "availability": "premium"
+    },
+    {
+      "name": "Ersatz M10",
+      "nation": "Alemania",
+      "type": "Tanque",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque medio",
+      "availability": "premium"
+    },
+    {
+      "name": "38 cm Sturmmörser",
+      "nation": "Alemania",
+      "type": "Cañón autopropulsado",
+      "rank": "IV",
+      "br": null,
+      "role": "Asalto",
+      "availability": "evento"
+    },
+    {
+      "name": "Bfw. Jagdpanther G1",
+      "nation": "Alemania",
+      "type": "Cazacarros",
+      "rank": "IV",
+      "br": null,
+      "role": "Antitanque",
+      "availability": "premium"
+    },
+    {
+      "name": "Elefant",
+      "nation": "Alemania",
+      "type": "Cazacarros",
+      "rank": "IV",
+      "br": null,
+      "role": "Antitanque",
+      "availability": "premium"
+    },
+    {
+      "name": "Panther II",
+      "nation": "Alemania",
+      "type": "Tanque medio",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque medio",
+      "availability": "premium"
+    },
+    {
+      "name": "Flakpanzer 341",
+      "nation": "Alemania",
+      "type": "SPAA",
+      "rank": "IV",
+      "br": null,
+      "role": "Antiaéreo",
+      "availability": "premium"
+    },
+    {
+      "name": "Tiger II (Sla.16)",
+      "nation": "Alemania",
+      "type": "Tanque pesado",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque pesado",
+      "availability": "premium"
+    },
+    {
+      "name": "Tiger II (10.5 cm Kw.K)",
+      "nation": "Alemania",
+      "type": "Tanque pesado",
+      "rank": "IV",
+      "br": null,
+      "role": "Tanque pesado",
+      "availability": "premium"
+    },
+    {
+      "name": "SPz 12-3 LGS",
+      "nation": "Alemania",
+      "type": "Tanque ligero",
+      "rank": "IV",
+      "br": null,
+      "role": "Explorador",
+      "availability": "premium"
+    },
+    {
+      "name": "Ru 251",
+      "nation": "Alemania",
+      "type": "Tanque ligero",
+      "rank": "IV",
+      "br": null,
+      "role": "Explorador",
+      "availability": "premium"
     }
   ]
 }
