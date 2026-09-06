@@ -21,7 +21,7 @@
     <section class="hero panel">
       <p class="eyebrow">INTELLIGENCE TERMINAL</p>
       <h1>Analiza. Compara. <span>Domina.</span></h1>
-      <p class="hero-text">Una interfaz para consultar vehículos y construir lineups coherentes a partir de datos verificados.</p>
+      <p class="hero-text">Consulta vehículos, busca lineups exactos y construye combinaciones coherentes a partir de datos verificados.</p>
 
       <div class="query-box">
         <label for="vehicleInput">VEHÍCULO BASE</label>
@@ -40,6 +40,13 @@
           <button id="lineupBtn" class="primary">GENERAR LINEUP</button>
         </div>
       </div>
+
+      <div class="query-box exact-lineup-box">
+        <label for="lineupInput">BUSCAR LINEUP EXACTO</label>
+        <input id="lineupInput" placeholder="Ej.: Panther G, Panther A, Zerstörer 45, Jagdpanther G1" autocomplete="off">
+        <button id="exactLineupBtn" class="primary">BUSCAR LINEUP</button>
+        <p class="data-note">Introduce los vehículos separados por comas. WTGPT comprobará la coincidencia exacta en su base.</p>
+      </div>
     </section>
 
     <aside class="panel database">
@@ -53,7 +60,7 @@
       <div class="empty-state">
         <span class="crosshair">⊕</span>
         <h2>ESPERANDO CONSULTA</h2>
-        <p>Selecciona un vehículo para iniciar el análisis.</p>
+        <p>Selecciona un vehículo o busca un lineup exacto.</p>
       </div>
     </section>
   </main>
