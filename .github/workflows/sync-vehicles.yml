@@ -32,12 +32,12 @@ jobs:
 
       - name: Commit database changes
         run: |
-          if git diff --quiet -- vehicles.json; then
+          if git diff --quiet -- vehicles.json aircraft.json; then
             echo "No vehicle database changes."
             exit 0
           fi
           git config user.name "WTGPT Data Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add vehicles.json
+          git add vehicles.json aircraft.json
           git commit -m "Sync War Thunder vehicle database"
           git push
