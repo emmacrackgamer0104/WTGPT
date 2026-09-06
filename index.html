@@ -4,64 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="WTGPT — War Thunder Intelligence & Analytics">
-  <title>WTGPT — War Thunder Intelligence & Analytics</title>
+  <title>WTGPT — Intelligence Center</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="scanlines"></div>
+  <div class="grid-bg"></div>
   <header class="topbar">
-    <div><span class="brand">WTGPT</span><span class="subtitle">WAR THUNDER INTELLIGENCE & ANALYTICS</span></div>
-    <span class="status"><i></i> SYSTEM ONLINE</span>
+    <div class="brand-wrap"><span class="brand">WTGPT</span><span class="brand-tag">INTELLIGENCE CENTER</span></div>
+    <nav><a href="#tools">TOOLS</a><a href="#tutorials">TUTORIALS</a><a href="#database">DATABASE</a></nav>
+    <span class="status"><i></i> ONLINE</span>
   </header>
 
-  <main class="layout">
-    <section class="hero panel">
-      <p class="eyebrow">INTELLIGENCE TERMINAL</p>
-      <h1>Analiza. Compara. <span>Domina.</span></h1>
-      <p class="hero-text">Consulta vehículos, busca lineups exactos y detecta saltos tecnológicos antes de entrar en batalla.</p>
-
-      <div class="query-box">
-        <label for="vehicleInput">VEHÍCULO BASE</label>
-        <input id="vehicleInput" list="vehicleList" placeholder="Ej.: Leopard 2A4" autocomplete="off">
-        <datalist id="vehicleList"></datalist>
-        <div class="controls">
-          <select id="mode"><option>Ground RB</option><option>Ground AB</option><option>Air RB</option><option>Air AB</option><option>Naval RB</option><option>Naval AB</option></select>
-          <button id="analyzeBtn">ANALIZAR VEHÍCULO</button>
-          <button id="lineupBtn" class="primary">GENERAR LINEUP</button>
-        </div>
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">WAR THUNDER // DATA &amp; INTELLIGENCE</p>
+        <h1>Know your vehicle.<br><span>Know your battle.</span></h1>
+        <p>Analiza vehículos, construye lineups y evalúa tu preparación antes de entrar en combate.</p>
       </div>
+      <div class="hero-mark"><span>WT</span><small>INTEL</small></div>
+    </section>
 
-      <div class="query-box">
-        <label>PREPARACIÓN DEL JUGADOR</label>
-        <div class="controls">
-          <input id="playerRank" type="number" min="1" max="10" placeholder="Tu rango (1–10)">
-          <input id="playerBr" type="number" min="0" max="20" step="0.1" placeholder="Tu BR habitual">
-          <button id="readinessBtn" class="primary">DETECTAR SALTO</button>
-        </div>
-        <p class="data-note">Compara tu progresión habitual con el vehículo seleccionado. Tener un vehículo de escuadrón/evento no se interpreta automáticamente como estar preparado para su BR.</p>
-      </div>
+    <section id="database" class="stats-strip">
+      <div><span>VEHICLES</span><strong id="vehicleCount">—</strong></div>
+      <div><span>VERIFIED BR</span><strong id="verifiedCount">—</strong></div>
+      <div><span>GROUND</span><strong>●</strong></div>
+      <div><span>AVIATION</span><strong>●</strong></div>
+      <div><span>NAVAL</span><strong>●</strong></div>
+    </section>
 
-      <div class="query-box exact-lineup-box">
-        <label for="lineupInput">BUSCAR LINEUP EXACTO</label>
-        <input id="lineupInput" placeholder="Ej.: Panther G, Panther A, Zerstörer 45, Jagdpanther G1" autocomplete="off">
-        <button id="exactLineupBtn" class="primary">BUSCAR LINEUP</button>
-        <p class="data-note">Introduce los vehículos separados por comas. WTGPT comprobará la coincidencia exacta en su base.</p>
+    <section id="tools" class="workspace">
+      <div class="section-heading"><span>01</span><h2>COMMAND CENTER</h2><p>Select an intelligence operation</p></div>
+      <div class="tool-grid">
+        <article class="tool-card featured">
+          <div class="tool-icon">◈</div><span class="tool-index">01 / VEHICLE</span>
+          <h3>Analizar vehículo</h3><p>BR, rol, disponibilidad y datos técnicos del vehículo seleccionado.</p>
+          <div class="vehicle-search"><input id="vehicleInput" list="vehicleList" placeholder="Buscar vehículo..." autocomplete="off"><datalist id="vehicleList"></datalist><select id="mode"><option>Ground RB</option><option>Ground AB</option><option>Air RB</option><option>Air AB</option><option>Naval RB</option><option>Naval AB</option></select><button id="analyzeBtn">ANALIZAR →</button></div>
+        </article>
+        <article class="tool-card"><div class="tool-icon">⊞</div><span class="tool-index">02 / LINEUP</span><h3>Generar lineup</h3><p>Encuentra una composición equilibrada alrededor de tu vehículo principal.</p><button id="lineupBtn" class="action">GENERAR LINEUP →</button></article>
+        <article class="tool-card"><div class="tool-icon">◎</div><span class="tool-index">03 / READINESS</span><h3>Preparación</h3><p>Detecta saltos tecnológicos entre tu progresión y el vehículo elegido.</p><div class="mini-inputs"><input id="playerRank" type="number" min="1" max="10" placeholder="Rango"><input id="playerBr" type="number" min="0" max="20" step="0.1" placeholder="BR habitual"></div><button id="readinessBtn" class="action">DETECTAR SALTO →</button></article>
+        <article class="tool-card"><div class="tool-icon">≡</div><span class="tool-index">04 / EXACT MATCH</span><h3>Buscar lineup</h3><p>Comprueba si una composición concreta existe exactamente en la base.</p><input id="lineupInput" placeholder="Vehículo, vehículo, vehículo..." autocomplete="off"><button id="exactLineupBtn" class="action">BUSCAR →</button></article>
       </div>
     </section>
 
-    <aside class="panel database">
-      <p class="eyebrow">DATABASE</p>
-      <div class="metric"><strong id="vehicleCount">—</strong><span>VEHÍCULOS</span></div>
-      <div class="metric"><strong id="verifiedCount">—</strong><span>BR VERIFICADOS</span></div>
-      <div class="data-note">Los datos no verificados no se inventan.</div>
-    </aside>
+    <section id="tutorials" class="intel-section">
+      <div class="section-heading"><span>02</span><h2>INTELLIGENCE FEED</h2><p>Prioridades de aprendizaje</p></div>
+      <div class="intel-grid"><div><b>BR 14.0</b><h3>RWR &amp; RADAR</h3><p>Domina RWR, ACM, STT, TWS y BVR.</p></div><div><b>BR 12.7</b><h3>GROUND SYSTEMS</h3><p>LWS, LRF, térmicas y hunter-killer.</p></div><div><b>AIR-TO-GROUND</b><h3>GUIDED WEAPONS</h3><p>CCIP, CCRP, TV/IR, láser y SEAD.</p></div></div>
+    </section>
 
-    <section id="output" class="panel output">
-      <div class="empty-state"><span class="crosshair">⊕</span><h2>ESPERANDO CONSULTA</h2><p>Selecciona un vehículo o detecta un salto tecnológico.</p></div>
+    <section id="output" class="results panel">
+      <div class="empty-state"><span>+</span><p>NO ACTIVE INTELLIGENCE</p><small>Selecciona una operación en el Command Center.</small></div>
     </section>
   </main>
-
-  <footer>WTGPT // EARLY DEVELOPMENT // PYTHON + JSON DATA CORE</footer>
+  <footer><span>WTGPT</span> // WAR THUNDER INTELLIGENCE &amp; ANALYTICS // EARLY DEVELOPMENT</footer>
   <script src="app.js"></script>
 </body>
 </html>
