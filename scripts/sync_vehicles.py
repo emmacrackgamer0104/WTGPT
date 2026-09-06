@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build WTGPT's vehicle catalog from the community War Thunder Vehicles API.
+"""Build WTGPT vehicle catalogs from the community War Thunder Vehicles API.
 
-The catalog is generated data. WTGPT keeps a small manual overlay for special,
-retired, event and legacy vehicles that may need curation beyond the API.
+The main catalog keeps the raw vehicle coverage, while aircraft.json provides a
+clean fixed-wing aircraft catalog for aviation-specific features.
 """
 from __future__ import annotations
 
@@ -17,6 +17,7 @@ import requests
 API_URL = "https://wtvehiclesapi.duckdns.org/api/vehicles"
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "vehicles.json"
+AIRCRAFT_OUT = ROOT / "aircraft.json"
 LIMIT = 200
 
 NATION_MAP = {
@@ -38,13 +39,24 @@ ROLE_MAP = {
     "frigate": "Fragata", "boat": "Embarcación", "torpedo boat": "Lancha torpedera",
 }
 
+# Fixed-wing aviation types. Helicopters are deliberately excluded: they get a
+# separate category so an aviation query cannot accidentally mix them with planes.
+AIRCRAFT_HINTS = (
+    "aircraft", "fighter", "bomber", "strike", "attacker", "interceptor",
+    "reconnaissance", "recon", "naval aircraft", "flying boat", "floatplane",
+    "seaplane", "glider", "torpedo bomber", "heavy fighter", "light bomber",
+    "medium bomber", "frontline bomber", "assault aircraft", "jet fighter",
+)
+HELICOPTER_HINTS = ("helicopter", "rotorcraft")
+GROUND_HINTS = ("tank", "spaa", "atgm", "anti-aircraft", "vehicle", "artillery")
+NAVAL_HINTS = ("destroyer", "cruiser", "battleship", "battlecruiser", "frigate", "boat", "ship", "submarine")
+
 
 def norm(s: Any) -> str:
     return re.sub(r"\s+", " ", str(s or "").strip()).lower()
 
 
 def first(obj: Any, keys: set[str]) -> Any:
-    """Find the first value whose key matches, recursively."""
     if isinstance(obj, dict):
         for k, v in obj.items():
             if norm(k) in keys and v not in (None, "", [], {}):
@@ -135,6 +147,23 @@ def role_name(raw: str) -> str:
     return raw or "Desconocido"
 
 
+def category_name(raw_type: str) -> str:
+    key = norm(raw_type)
+    if any(h in key for h in HELICOPTER_HINTS):
+        return "helicopter"
+    if any(h in key for h in NAVAL_HINTS):
+        return "naval"
+    if any(h in key for h in GROUND_HINTS):
+        return "ground"
+    if any(h in key for h in AIRCRAFT_HINTS):
+        return "aircraft"
+    return "unknown"
+
+
+def is_aircraft(entry: dict[str, Any]) -> bool:
+    return entry.get("category") == "aircraft"
+
+
 def extract_status(row: dict[str, Any]) -> str:
     value = first(row, {"availability", "availability_status", "status", "vehicle_status", "purchasestatus"})
     text = norm(value)
@@ -200,7 +229,6 @@ def load_manual() -> dict[str, dict[str, Any]]:
 
 
 def rank_sort_value(value: Any) -> int:
-    """Normalize numeric and legacy Roman-numeral ranks for deterministic sorting."""
     n = number(value)
     if n is not None and 1 <= n <= 10:
         return int(n)
@@ -216,35 +244,39 @@ def main() -> int:
         name = extract_name(row)
         key = norm(name)
         existing = manual.get(key, {})
+        raw_type = extract_type(row)
         entry = {
             "name": name,
             "nation": extract_nation(row),
-            "type": extract_type(row),
+            "type": raw_type,
+            "category": category_name(raw_type),
             "rank": extract_rank(row),
             "br": clean_number(extract_br(row, "rb")),
             "br_ab": clean_number(extract_br(row, "ab")),
             "br_sb": clean_number(extract_br(row, "sb")),
-            "role": role_name(extract_type(row)),
+            "role": role_name(raw_type),
             "availability": existing.get("availability") or extract_status(row),
             "source": "WT Vehicles API",
             "source_id": row_id(row),
         }
-        # Keep trusted manual corrections when the API has a hole.
-        for field in ("nation", "type", "rank", "br", "br_ab", "br_sb", "role"):
-            if entry[field] in (None, "", "Desconocida", "Desconocido") and existing.get(field) not in (None, ""):
+        for field in ("nation", "type", "category", "rank", "br", "br_ab", "br_sb", "role"):
+            if entry[field] in (None, "", "Desconocida", "Desconocido", "unknown") and existing.get(field) not in (None, ""):
                 entry[field] = existing[field]
         vehicles[key] = entry
 
-    # Preserve curated vehicles absent from the API (retired/event/legacy cases).
     for key, entry in manual.items():
         if key not in vehicles:
             entry = dict(entry)
             entry.setdefault("source", "manual-curation")
+            entry.setdefault("category", category_name(str(entry.get("type", ""))))
             vehicles[key] = entry
 
     output = sorted(vehicles.values(), key=lambda v: (str(v.get("nation")), rank_sort_value(v.get("rank")), str(v.get("name"))))
+    aircraft = [v for v in output if is_aircraft(v)]
+    AIRCRAFT_OUT.write_text(json.dumps({"vehicles": aircraft}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     OUT.write_text(json.dumps({"vehicles": output}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"WTGPT: {len(output)} vehículos escritos en {OUT}")
+    print(f"WTGPT: {len(aircraft)} aviones escritos en {AIRCRAFT_OUT}")
     return 0
 
 
