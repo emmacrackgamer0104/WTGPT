@@ -199,6 +199,15 @@ def load_manual() -> dict[str, dict[str, Any]]:
     return result
 
 
+def rank_sort_value(value: Any) -> int:
+    """Normalize numeric and legacy Roman-numeral ranks for deterministic sorting."""
+    n = number(value)
+    if n is not None and 1 <= n <= 10:
+        return int(n)
+    roman = {"i": 1, "ii": 2, "iii": 3, "iv": 4, "v": 5, "vi": 6, "vii": 7, "viii": 8, "ix": 9, "x": 10}
+    return roman.get(norm(value), 99)
+
+
 def main() -> int:
     manual = load_manual()
     rows = fetch_all()
@@ -233,7 +242,7 @@ def main() -> int:
             entry.setdefault("source", "manual-curation")
             vehicles[key] = entry
 
-    output = sorted(vehicles.values(), key=lambda v: (str(v.get("nation")), v.get("rank") is None, v.get("rank") or 99, str(v.get("name"))))
+    output = sorted(vehicles.values(), key=lambda v: (str(v.get("nation")), rank_sort_value(v.get("rank")), str(v.get("name"))))
     OUT.write_text(json.dumps({"vehicles": output}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"WTGPT: {len(output)} vehículos escritos en {OUT}")
     return 0
