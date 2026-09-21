@@ -3683,6 +3683,20 @@
       "source_id": "germ_rboot_r301"
     },
     {
+      "name": "rboot r310",
+      "nation": "Alemania",
+      "type": "boat",
+      "category": "naval",
+      "rank": 2,
+      "br": 2.3,
+      "br_ab": 2.3,
+      "br_sb": 2.3,
+      "role": "Embarcación",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "germ_rboot_r310"
+    },
+    {
       "name": "s 100 class",
       "nation": "Alemania",
       "type": "boat",
@@ -8001,6 +8015,20 @@
       "source_id": "il_28_german"
     },
     {
+      "name": "arado 234b 2 mt",
+      "nation": "Alemania",
+      "type": "bomber",
+      "category": "aircraft",
+      "rank": 5,
+      "br": 6.7,
+      "br_ab": 6.7,
+      "br_sb": 6.7,
+      "role": "Bombardero",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "arado_234b_2_mt"
+    },
+    {
       "name": "arado-234",
       "nation": "Alemania",
       "type": "bomber",
@@ -9063,20 +9091,6 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "germ_pr1331"
-    },
-    {
-      "name": "pzh 2000",
-      "nation": "Alemania",
-      "type": "tank_destroyer",
-      "category": "naval",
-      "rank": 5,
-      "br": 7.7,
-      "br_ab": 8,
-      "br_sb": 7.7,
-      "role": "Destructor",
-      "availability": "regular",
-      "source": "WT Vehicles API",
-      "source_id": "germ_pzh_2000"
     },
     {
       "name": "pzkpfw Maus",
@@ -10983,6 +10997,20 @@
       "source_id": "germ_wiesel_1_tow"
     },
     {
+      "name": "h145m",
+      "nation": "Alemania",
+      "type": "utility_helicopter",
+      "category": "helicopter",
+      "rank": 7,
+      "br": 12.7,
+      "br_ab": 10,
+      "br_sb": 12.7,
+      "role": "utility_helicopter",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "h145m"
+    },
+    {
       "name": "leopard 2 pt14",
       "nation": "Alemania",
       "type": "medium_tank",
@@ -11513,6 +11541,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "germ_wiesel_1_tow"
+    },
+    {
+      "name": "embt",
+      "nation": "Alemania",
+      "type": "medium_tank",
+      "category": "ground",
+      "rank": 8,
+      "br": 12.7,
+      "br_ab": 12.7,
+      "br_sb": 12.7,
+      "role": "medium_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "germ_embt"
     },
     {
       "name": "f-4f kws lv",
@@ -14002,6 +14044,20 @@
       "source_id": "pe-2-359_china"
     },
     {
+      "name": "plz 45",
+      "nation": "China",
+      "type": "tank_destroyer",
+      "category": "naval",
+      "rank": 4,
+      "br": 6.3,
+      "br_ab": 6.3,
+      "br_sb": 6.3,
+      "role": "Destructor",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "cn_plz_45"
+    },
+    {
       "name": "plz 83",
       "nation": "China",
       "type": "tank_destroyer",
@@ -16074,6 +16130,20 @@
       "source_id": "f-5e_aidc"
     },
     {
+      "name": "hq 17",
+      "nation": "China",
+      "type": "spaa",
+      "category": "ground",
+      "rank": 7,
+      "br": 11.7,
+      "br_ab": 11.7,
+      "br_sb": 11.7,
+      "role": "Antiaéreo",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "cn_hq_17"
+    },
+    {
       "name": "j 7d",
       "nation": "China",
       "type": "fighter",
@@ -16648,6 +16718,20 @@
       "source_id": "f_16a_block_20_mlu"
     },
     {
+      "name": "fk 2000",
+      "nation": "China",
+      "type": "spaa",
+      "category": "ground",
+      "rank": 8,
+      "br": 12,
+      "br_ab": 12,
+      "br_sb": 12,
+      "role": "Antiaéreo",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "cn_fk_2000"
+    },
+    {
       "name": "hq 11",
       "nation": "China",
       "type": "spaa",
@@ -16660,20 +16744,6 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "cn_hq_11"
-    },
-    {
-      "name": "hq 17",
-      "nation": "China",
-      "type": "spaa",
-      "category": "ground",
-      "rank": 8,
-      "br": 11.7,
-      "br_ab": 11.7,
-      "br_sb": 11.7,
-      "role": "Antiaéreo",
-      "availability": "regular",
-      "source": "WT Vehicles API",
-      "source_id": "cn_hq_17"
     },
     {
       "name": "j 10a",
@@ -17122,6 +17192,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "j_15t"
+    },
+    {
+      "name": "j 16",
+      "nation": "China",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 9,
+      "br": 14.7,
+      "br_ab": 14.7,
+      "br_sb": 14.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "j_16"
     },
     {
       "name": "j_10c",
@@ -18664,6 +18748,20 @@
       "source_id": "us_destroyer_gridley"
     },
     {
+      "name": "destroyer mahan class",
+      "nation": "Estados Unidos",
+      "type": "destroyer",
+      "category": "naval",
+      "rank": 2,
+      "br": 4.3,
+      "br_ab": 4.3,
+      "br_sb": 4.3,
+      "role": "Destructor",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "us_destroyer_mahan_class"
+    },
+    {
       "name": "destroyer mitscher",
       "nation": "Estados Unidos",
       "type": "destroyer",
@@ -19124,6 +19222,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "us_m5a1_stuart_td"
+    },
+    {
+      "name": "m7",
+      "nation": "Estados Unidos",
+      "type": "medium_tank",
+      "category": "ground",
+      "rank": 2,
+      "br": 3.7,
+      "br_ab": 3.7,
+      "br_sb": 3.7,
+      "role": "medium_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "us_m7"
     },
     {
       "name": "m8a1",
@@ -25720,6 +25832,20 @@
       "source_id": "f_101c"
     },
     {
+      "name": "f 102a late",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9,
+      "br_sb": 9,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_102a_late"
+    },
+    {
       "name": "f 106a 1972",
       "nation": "Estados Unidos",
       "type": "fighter",
@@ -28240,6 +28366,20 @@
       "source_id": "f_14d"
     },
     {
+      "name": "f 14d vf 11",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13,
+      "br_ab": 12.3,
+      "br_sb": 12.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_14d_vf_11"
+    },
+    {
       "name": "f 15a",
       "nation": "Estados Unidos",
       "type": "fighter",
@@ -28322,6 +28462,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "f_16c_block_50"
+    },
+    {
+      "name": "f 16xl",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13,
+      "br_ab": 13,
+      "br_sb": 13,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_16xl"
     },
     {
       "name": "f 20a",
@@ -30027,6 +30181,20 @@
       "source_id": "late_298d"
     },
     {
+      "name": "lcm monitor",
+      "nation": "Francia",
+      "type": "boat",
+      "category": "naval",
+      "rank": 1,
+      "br": 1.7,
+      "br_ab": 1.7,
+      "br_sb": 1.7,
+      "role": "Embarcación",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "fr_lcm_monitor"
+    },
+    {
       "name": "loire 130",
       "nation": "Francia",
       "type": "bomber",
@@ -31523,6 +31691,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "fr_arl_44_acl1"
+    },
+    {
+      "name": "arl 44 mod",
+      "nation": "Francia",
+      "type": "heavy_tank",
+      "category": "ground",
+      "rank": 3,
+      "br": 5.3,
+      "br_ab": 5.3,
+      "br_sb": 5.3,
+      "role": "heavy_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "fr_arl_44_mod"
     },
     {
       "name": "arras class amiens",
@@ -33667,6 +33849,20 @@
       "source_id": "fr_battleship_courbet_class_paris"
     },
     {
+      "name": "cruiser algerie class",
+      "nation": "Francia",
+      "type": "heavy_cruiser",
+      "category": "naval",
+      "rank": 5,
+      "br": 6,
+      "br_ab": 6,
+      "br_sb": 6,
+      "role": "heavy_cruiser",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "fr_cruiser_algerie_class"
+    },
+    {
       "name": "f-84g france",
       "nation": "Francia",
       "type": "assault",
@@ -34309,6 +34505,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "sa_316b"
+    },
+    {
+      "name": "se 203",
+      "nation": "Francia",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 5,
+      "br": 8,
+      "br_ab": 8,
+      "br_sb": 8,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "se_203"
     },
     {
       "name": "sea hawk fga50 netherlands",
@@ -38371,34 +38581,6 @@
       "source_id": "uk_a27m_cromwell_1"
     },
     {
-      "name": "a27m cromwell 5",
-      "nation": "Gran Bretaña",
-      "type": "medium_tank",
-      "category": "ground",
-      "rank": 2,
-      "br": 4,
-      "br_ab": 3.7,
-      "br_sb": 4,
-      "role": "medium_tank",
-      "availability": "regular",
-      "source": "WT Vehicles API",
-      "source_id": "uk_a27m_cromwell_5"
-    },
-    {
-      "name": "a27m cromwell 5 rp3",
-      "nation": "Gran Bretaña",
-      "type": "medium_tank",
-      "category": "ground",
-      "rank": 2,
-      "br": 4,
-      "br_ab": 3.7,
-      "br_sb": 4,
-      "role": "medium_tank",
-      "availability": "regular",
-      "source": "WT Vehicles API",
-      "source_id": "uk_a27m_cromwell_5_rp3"
-    },
-    {
       "name": "ac1 sentinel",
       "nation": "Gran Bretaña",
       "type": "medium_tank",
@@ -40539,6 +40721,34 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "uk_a_34_comet_iron_duke"
+    },
+    {
+      "name": "a27m cromwell 5",
+      "nation": "Gran Bretaña",
+      "type": "medium_tank",
+      "category": "ground",
+      "rank": 3,
+      "br": 4,
+      "br_ab": 3.7,
+      "br_sb": 4,
+      "role": "medium_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "uk_a27m_cromwell_5"
+    },
+    {
+      "name": "a27m cromwell 5 rp3",
+      "nation": "Gran Bretaña",
+      "type": "medium_tank",
+      "category": "ground",
+      "rank": 3,
+      "br": 4,
+      "br_ab": 3.7,
+      "br_sb": 4,
+      "role": "medium_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "uk_a27m_cromwell_5_rp3"
     },
     {
       "name": "a30 challenger",
@@ -44447,6 +44657,34 @@
       "source_id": "uk_fv721_fox"
     },
     {
+      "name": "hawk t1a",
+      "nation": "Gran Bretaña",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 5,
+      "br": 7.7,
+      "br_ab": 7.7,
+      "br_sb": 7.7,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "hawk_t1a"
+    },
+    {
+      "name": "hawk t1a early",
+      "nation": "Gran Bretaña",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 5,
+      "br": 7.7,
+      "br_ab": 7.7,
+      "br_sb": 7.7,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "hawk_t1a_early"
+    },
+    {
       "name": "marut mk1",
       "nation": "Gran Bretaña",
       "type": "assault",
@@ -45481,6 +45719,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "buccaneer_s2"
+    },
+    {
+      "name": "ca 27 mk32 raaf",
+      "nation": "Gran Bretaña",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ca_27_mk32_raaf"
     },
     {
       "name": "centurion shot kal d",
@@ -46713,6 +46965,48 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "uk_ajax"
+    },
+    {
+      "name": "arjun mk1",
+      "nation": "Gran Bretaña",
+      "type": "medium_tank",
+      "category": "ground",
+      "rank": 7,
+      "br": 10.7,
+      "br_ab": 10.7,
+      "br_sb": 10.7,
+      "role": "medium_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "uk_arjun_mk1"
+    },
+    {
+      "name": "aw 159",
+      "nation": "Gran Bretaña",
+      "type": "utility_helicopter",
+      "category": "helicopter",
+      "rank": 7,
+      "br": 12.3,
+      "br_ab": 10.7,
+      "br_sb": 10.7,
+      "role": "utility_helicopter",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "aw_159"
+    },
+    {
+      "name": "battleship lion class",
+      "nation": "Gran Bretaña",
+      "type": "battleship",
+      "category": "naval",
+      "rank": 7,
+      "br": 8.7,
+      "br_ab": 8.7,
+      "br_sb": 8.7,
+      "role": "Acorazado",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "uk_battleship_lion_class"
     },
     {
       "name": "battleship vanguard",
@@ -48479,6 +48773,20 @@
       "source_id": "s_199"
     },
     {
+      "name": "sb2c 5 greece",
+      "nation": "Israel",
+      "type": "bomber",
+      "category": "aircraft",
+      "rank": 4,
+      "br": 3.7,
+      "br_ab": 3.7,
+      "br_sb": 4,
+      "role": "Bombardero",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "sb2c_5_greece"
+    },
+    {
       "name": "sholef",
       "nation": "Israel",
       "type": "tank_destroyer",
@@ -48673,6 +48981,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "il_centurion_shot_kal_alef"
+    },
+    {
+      "name": "f-84g greece",
+      "nation": "Israel",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 5,
+      "br": 7.7,
+      "br_ab": 7.7,
+      "br_sb": 8,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f-84g_greece"
     },
     {
       "name": "il_centurion_shot_kal_alef",
@@ -49319,6 +49641,34 @@
       "source_id": "il_centurion_shot_kal_gimel"
     },
     {
+      "name": "f 102a greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9,
+      "br_sb": 9,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_102a_greece"
+    },
+    {
+      "name": "f 86em greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_86em_greece"
+    },
+    {
       "name": "f-84f israel iaf",
       "nation": "Israel",
       "type": "assault",
@@ -49907,6 +50257,34 @@
       "source_id": "il_tiran_6"
     },
     {
+      "name": "a 7e greece",
+      "nation": "Israel",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 7,
+      "br": 10.3,
+      "br_ab": 11,
+      "br_sb": 10.3,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "a_7e_greece"
+    },
+    {
+      "name": "a 7h greece",
+      "nation": "Israel",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 7,
+      "br": 10.3,
+      "br_ab": 11,
+      "br_sb": 10.3,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "a_7h_greece"
+    },
+    {
       "name": "ah 60 iaf",
       "nation": "Israel",
       "type": "attack_helicopter",
@@ -49926,8 +50304,8 @@
       "type": "attack_helicopter",
       "category": "helicopter",
       "rank": 7,
-      "br": 11.7,
-      "br_ab": 10.7,
+      "br": 12.7,
+      "br_ab": 12.7,
       "br_sb": 10.7,
       "role": "attack_helicopter",
       "availability": "regular",
@@ -50299,6 +50677,20 @@
       "source_id": "mirage_3cj"
     },
     {
+      "name": "mirage f1cg greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 7,
+      "br": 11.3,
+      "br_ab": 11.3,
+      "br_sb": 11.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "mirage_f1cg_greece"
+    },
+    {
       "name": "mirage_3cj",
       "nation": "Israel",
       "type": "fighter",
@@ -50325,6 +50717,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "il_namer_rcws_30"
+    },
+    {
+      "name": "namer tsrikhon",
+      "nation": "Israel",
+      "type": "light_tank",
+      "category": "ground",
+      "rank": 7,
+      "br": 11.3,
+      "br_ab": 11.3,
+      "br_sb": 11.3,
+      "role": "light_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "il_namer_tsrikhon"
     },
     {
       "name": "nesher",
@@ -50465,6 +50871,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "f_16i_sufa"
+    },
+    {
+      "name": "f 4e aup greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13,
+      "br_ab": 13,
+      "br_sb": 13,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_4e_aup_greece"
     },
     {
       "name": "f-4e kurnass 2000",
@@ -50705,6 +51125,20 @@
       "source_id": "kfir_c10_colombia"
     },
     {
+      "name": "leopard 2a6 hel",
+      "nation": "Israel",
+      "type": "medium_tank",
+      "category": "ground",
+      "rank": 8,
+      "br": 12.7,
+      "br_ab": 12.7,
+      "br_sb": 12.7,
+      "role": "medium_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "il_leopard_2a6_hel"
+    },
+    {
       "name": "merkava mk 4 lic",
       "nation": "Israel",
       "type": "medium_tank",
@@ -50747,18 +51181,18 @@
       "source_id": "il_merkava_mk_4m"
     },
     {
-      "name": "namer tsrikhon",
+      "name": "mirage 2000 5eg mk2 greece",
       "nation": "Israel",
-      "type": "light_tank",
-      "category": "ground",
+      "type": "fighter",
+      "category": "aircraft",
       "rank": 8,
-      "br": 11.3,
-      "br_ab": 11.3,
-      "br_sb": 11.3,
-      "role": "light_tank",
+      "br": 14,
+      "br_ab": 14,
+      "br_sb": 14,
+      "role": "Caza",
       "availability": "regular",
       "source": "WT Vehicles API",
-      "source_id": "il_namer_tsrikhon"
+      "source_id": "mirage_2000_5eg_mk2_greece"
     },
     {
       "name": "spyder aio",
@@ -50773,6 +51207,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "il_spyder_aio"
+    },
+    {
+      "name": "rafale eg greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 9,
+      "br": 14.7,
+      "br_ab": 14.7,
+      "br_sb": 14.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "rafale_eg_greece"
     },
     {
       "name": "39m csaba",
@@ -56697,6 +57145,20 @@
       "source_id": "it_p494_saetta"
     },
     {
+      "name": "pzh 2000",
+      "nation": "Italia",
+      "type": "tank_destroyer",
+      "category": "naval",
+      "rank": 5,
+      "br": 7.7,
+      "br_ab": 8,
+      "br_sb": 7.7,
+      "role": "Destructor",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "it_pzh_2000"
+    },
+    {
       "name": "pzh 2000 hu",
       "nation": "Italia",
       "type": "tank_destroyer",
@@ -56863,6 +57325,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "it_battleship_conte_di_cavour"
+    },
+    {
+      "name": "battleship giulio cesare",
+      "nation": "Italia",
+      "type": "battleship",
+      "category": "naval",
+      "rank": 6,
+      "br": 7.3,
+      "br_ab": 7.3,
+      "br_sb": 7.3,
+      "role": "Acorazado",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "it_battleship_giulio_cesare"
     },
     {
       "name": "c13 tua",
@@ -61527,6 +62003,20 @@
       "source_id": "a6m5_zero"
     },
     {
+      "name": "b 26b indonesia kalong",
+      "nation": "Japón",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 3,
+      "br": 4.3,
+      "br_ab": 4.3,
+      "br_sb": 4.3,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "b_26b_indonesia_kalong"
+    },
+    {
       "name": "b7a2",
       "nation": "Japón",
       "type": "bomber",
@@ -62311,6 +62801,20 @@
       "source_id": "ki_67_1_otsu"
     },
     {
+      "name": "ki 93 1 ko",
+      "nation": "Japón",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 3,
+      "br": 4.3,
+      "br_ab": 4.3,
+      "br_sb": 4.3,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ki_93_1_ko"
+    },
+    {
       "name": "ki-49 2b",
       "nation": "Japón",
       "type": "bomber",
@@ -62743,6 +63247,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "jp_type7_pt808"
+    },
+    {
+      "name": "type9 pt809",
+      "nation": "Japón",
+      "type": "boat",
+      "category": "naval",
+      "rank": 3,
+      "br": 2.3,
+      "br_ab": 2.3,
+      "br_sb": 2.3,
+      "role": "Embarcación",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "jp_type9_pt809"
     },
     {
       "name": "a6m5hei",
@@ -65013,6 +65531,20 @@
       "source_id": "jp_yuri_class_asagao"
     },
     {
+      "name": "a 4ptm malaysia",
+      "nation": "Japón",
+      "type": "assault",
+      "category": "unknown",
+      "rank": 6,
+      "br": 9.7,
+      "br_ab": 9.7,
+      "br_sb": 9.7,
+      "role": "assault",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "a_4ptm_malaysia"
+    },
+    {
       "name": "ah 1s",
       "nation": "Japón",
       "type": "attack_helicopter",
@@ -65291,6 +65823,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "jp_btr_3e1"
+    },
+    {
+      "name": "ca 27 mk32 malaysia",
+      "nation": "Japón",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ca_27_mk32_malaysia"
     },
     {
       "name": "f-104j",
@@ -66047,6 +66593,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "f-5t_thailand"
+    },
+    {
+      "name": "harimau",
+      "nation": "Japón",
+      "type": "light_tank",
+      "category": "ground",
+      "rank": 7,
+      "br": 10.3,
+      "br_ab": 10.3,
+      "br_sb": 10.3,
+      "role": "light_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "jp_harimau"
     },
     {
       "name": "hawk 209 indonesia",
@@ -70695,6 +71255,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "saab_j35d"
+    },
+    {
+      "name": "saab j35j",
+      "nation": "Suecia",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 7,
+      "br": 10.3,
+      "br_ab": 10.3,
+      "br_sb": 10.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "saab_j35j"
     },
     {
       "name": "saab j35xs",
@@ -76171,6 +76745,20 @@
       "source_id": "er-2_m105r_tat"
     },
     {
+      "name": "fugas t1 strela",
+      "nation": "URSS",
+      "type": "heavy_boat",
+      "category": "naval",
+      "rank": 3,
+      "br": 2.7,
+      "br_ab": 2.7,
+      "br_sb": 2.7,
+      "role": "Embarcación",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ussr_fugas_t1_strela"
+    },
+    {
       "name": "i 185 m71 standard",
       "nation": "URSS",
       "type": "fighter",
@@ -78187,6 +78775,20 @@
       "source_id": "ussr_is_2_1944_revenge"
     },
     {
+      "name": "is 2m kit 4rank",
+      "nation": "URSS",
+      "type": "heavy_tank",
+      "category": "ground",
+      "rank": 4,
+      "br": 6.3,
+      "br_ab": 6.3,
+      "br_sb": 6.3,
+      "role": "heavy_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ussr_is_2m_kit_4rank"
+    },
+    {
       "name": "kv 122",
       "nation": "URSS",
       "type": "heavy_tank",
@@ -78297,6 +78899,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "ussr_m53_59"
+    },
+    {
+      "name": "m53 59 kit 4rank",
+      "nation": "URSS",
+      "type": "spaa",
+      "category": "ground",
+      "rank": 4,
+      "br": 6.3,
+      "br_ab": 6.3,
+      "br_sb": 6.3,
+      "role": "Antiaéreo",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ussr_m53_59_kit_4rank"
     },
     {
       "name": "mbk 161 1944",
@@ -78731,6 +79347,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "ussr_t_44_122"
+    },
+    {
+      "name": "t 44 kit 4rank",
+      "nation": "URSS",
+      "type": "medium_tank",
+      "category": "ground",
+      "rank": 4,
+      "br": 6.7,
+      "br_ab": 6.7,
+      "br_sb": 6.7,
+      "role": "medium_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ussr_t_44_kit_4rank"
     },
     {
       "name": "t 44 po",
@@ -80217,6 +80847,20 @@
       "source_id": "ussr_object_268"
     },
     {
+      "name": "object 416",
+      "nation": "URSS",
+      "type": "tank_destroyer",
+      "category": "naval",
+      "rank": 5,
+      "br": 6.7,
+      "br_ab": 6.7,
+      "br_sb": 6.7,
+      "role": "Destructor",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ussr_object_416"
+    },
+    {
       "name": "object 906",
       "nation": "URSS",
       "type": "light_tank",
@@ -81195,6 +81839,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "ussr_9p149"
+    },
+    {
+      "name": "9p157",
+      "nation": "URSS",
+      "type": "tank_destroyer",
+      "category": "naval",
+      "rank": 6,
+      "br": 9.3,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "Destructor",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ussr_9p157"
     },
     {
       "name": "battlecruiser kronshtadt",
@@ -82581,20 +83239,6 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "ussr_9a35_m2"
-    },
-    {
-      "name": "9p157",
-      "nation": "URSS",
-      "type": "tank_destroyer",
-      "category": "naval",
-      "rank": 7,
-      "br": 9.3,
-      "br_ab": 9.3,
-      "br_sb": 9.3,
-      "role": "Destructor",
-      "availability": "regular",
-      "source": "WT Vehicles API",
-      "source_id": "ussr_9p157"
     },
     {
       "name": "battleship pr23 sovetskij soyuz",
@@ -84457,6 +85101,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "yak_141"
+    },
+    {
+      "name": "mig 35",
+      "nation": "URSS",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 9,
+      "br": 14.3,
+      "br_ab": 14.3,
+      "br_sb": 14.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "mig_35"
     },
     {
       "name": "su 30sm",

@@ -2311,6 +2311,20 @@
       "source_id": "il_28_german"
     },
     {
+      "name": "arado 234b 2 mt",
+      "nation": "Alemania",
+      "type": "bomber",
+      "category": "aircraft",
+      "rank": 5,
+      "br": 6.7,
+      "br_ab": 6.7,
+      "br_sb": 6.7,
+      "role": "Bombardero",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "arado_234b_2_mt"
+    },
+    {
       "name": "arado-234",
       "nation": "Alemania",
       "type": "bomber",
@@ -5293,6 +5307,20 @@
       "source_id": "j_15t"
     },
     {
+      "name": "j 16",
+      "nation": "China",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 9,
+      "br": 14.7,
+      "br_ab": 14.7,
+      "br_sb": 14.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "j_16"
+    },
+    {
       "name": "j_10c",
       "nation": "China",
       "type": "fighter",
@@ -7869,6 +7897,20 @@
       "source_id": "f_101c"
     },
     {
+      "name": "f 102a late",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9,
+      "br_sb": 9,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_102a_late"
+    },
+    {
       "name": "f 106a 1972",
       "nation": "Estados Unidos",
       "type": "fighter",
@@ -8331,6 +8373,20 @@
       "source_id": "f_14d"
     },
     {
+      "name": "f 14d vf 11",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13,
+      "br_ab": 12.3,
+      "br_sb": 12.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_14d_vf_11"
+    },
+    {
       "name": "f 15a",
       "nation": "Estados Unidos",
       "type": "fighter",
@@ -8399,6 +8455,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "f_16c_block_50"
+    },
+    {
+      "name": "f 16xl",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13,
+      "br_ab": 13,
+      "br_sb": 13,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_16xl"
     },
     {
       "name": "f 20a",
@@ -10513,6 +10583,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "meteor_fmk8_belgium"
+    },
+    {
+      "name": "se 203",
+      "nation": "Francia",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 5,
+      "br": 8,
+      "br_ab": 8,
+      "br_sb": 8,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "se_203"
     },
     {
       "name": "sea hawk fga50 netherlands",
@@ -14463,6 +14547,20 @@
       "source_id": "washington_b1"
     },
     {
+      "name": "ca 27 mk32 raaf",
+      "nation": "Gran Bretaña",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ca_27_mk32_raaf"
+    },
+    {
       "name": "hunter f1",
       "nation": "Gran Bretaña",
       "type": "fighter",
@@ -15107,6 +15205,20 @@
       "source_id": "s_199"
     },
     {
+      "name": "sb2c 5 greece",
+      "nation": "Israel",
+      "type": "bomber",
+      "category": "aircraft",
+      "rank": 4,
+      "br": 3.7,
+      "br_ab": 3.7,
+      "br_sb": 4,
+      "role": "Bombardero",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "sb2c_5_greece"
+    },
+    {
       "name": "spitfire lf mk9c cw greece",
       "nation": "Israel",
       "type": "fighter",
@@ -15357,6 +15469,34 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "meteor_nfmk13"
+    },
+    {
+      "name": "f 102a greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9,
+      "br_sb": 9,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_102a_greece"
+    },
+    {
+      "name": "f 86em greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_86em_greece"
     },
     {
       "name": "md 454 mystere 4a iaf",
@@ -15653,6 +15793,20 @@
       "source_id": "mirage_3cj"
     },
     {
+      "name": "mirage f1cg greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 7,
+      "br": 11.3,
+      "br_ab": 11.3,
+      "br_sb": 11.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "mirage_f1cg_greece"
+    },
+    {
       "name": "mirage_3cj",
       "nation": "Israel",
       "type": "fighter",
@@ -15777,6 +15931,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "f_16i_sufa"
+    },
+    {
+      "name": "f 4e aup greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13,
+      "br_ab": 13,
+      "br_sb": 13,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f_4e_aup_greece"
     },
     {
       "name": "f-4e kurnass 2000",
@@ -15931,6 +16099,34 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "kfir_c10_colombia"
+    },
+    {
+      "name": "mirage 2000 5eg mk2 greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 14,
+      "br_ab": 14,
+      "br_sb": 14,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "mirage_2000_5eg_mk2_greece"
+    },
+    {
+      "name": "rafale eg greece",
+      "nation": "Israel",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 9,
+      "br": 14.7,
+      "br_ab": 14.7,
+      "br_sb": 14.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "rafale_eg_greece"
     },
     {
       "name": "br 20 dr",
@@ -20763,6 +20959,20 @@
       "source_id": "r2y2_v2"
     },
     {
+      "name": "ca 27 mk32 malaysia",
+      "nation": "Japón",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "ca_27_mk32_malaysia"
+    },
+    {
       "name": "f-104j",
       "nation": "Japón",
       "type": "fighter",
@@ -22637,6 +22847,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "saab_j35d"
+    },
+    {
+      "name": "saab j35j",
+      "nation": "Suecia",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 7,
+      "br": 10.3,
+      "br_ab": 10.3,
+      "br_sb": 10.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "saab_j35j"
     },
     {
       "name": "saab j35xs",
@@ -26543,6 +26767,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "yak_141"
+    },
+    {
+      "name": "mig 35",
+      "nation": "URSS",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 9,
+      "br": 14.3,
+      "br_ab": 14.3,
+      "br_sb": 14.3,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "mig_35"
     },
     {
       "name": "su 30sm",
