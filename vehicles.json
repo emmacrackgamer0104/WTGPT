@@ -50305,7 +50305,7 @@
       "category": "helicopter",
       "rank": 7,
       "br": 12.7,
-      "br_ab": 12.7,
+      "br_ab": 10.7,
       "br_sb": 10.7,
       "role": "attack_helicopter",
       "availability": "regular",
@@ -70569,6 +70569,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "mi_28a_sweden"
+    },
+    {
+      "name": "patria bmp 3",
+      "nation": "Suecia",
+      "type": "light_tank",
+      "category": "ground",
+      "rank": 6,
+      "br": 9.3,
+      "br_ab": 9.3,
+      "br_sb": 9.3,
+      "role": "light_tank",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "sw_patria_bmp_3"
     },
     {
       "name": "pbv 302 bill",
