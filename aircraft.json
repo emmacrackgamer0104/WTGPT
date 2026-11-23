@@ -5076,7 +5076,7 @@
       "rank": 8,
       "br": 13.7,
       "br_ab": 13.7,
-      "br_sb": 14,
+      "br_sb": 13.7,
       "role": "Caza",
       "availability": "regular",
       "source": "WT Vehicles API",
@@ -5487,6 +5487,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "f2a-1"
+    },
+    {
+      "name": "f2a-1 nvidia",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 1,
+      "br": 2,
+      "br_ab": 2,
+      "br_sb": 2,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "f2a-1_nvidia"
     },
     {
       "name": "f2a-1 thach",
@@ -8056,9 +8070,9 @@
       "type": "fighter",
       "category": "aircraft",
       "rank": 6,
-      "br": 9.3,
-      "br_ab": 9.3,
-      "br_sb": 9.3,
+      "br": 9,
+      "br_ab": 9,
+      "br_sb": 9,
       "role": "Caza",
       "availability": "regular",
       "source": "WT Vehicles API",
@@ -8707,6 +8721,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "fa_18c_late"
+    },
+    {
+      "name": "fa 18d late",
+      "nation": "Estados Unidos",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13.7,
+      "br_ab": 13.7,
+      "br_sb": 13.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "fa_18d_late"
     },
     {
       "name": "fa_18a",
@@ -11647,6 +11675,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "fairey_3f_mk3b"
+    },
+    {
+      "name": "fulmar mk2",
+      "nation": "Gran Bretaña",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 1,
+      "br": 1.7,
+      "br_ab": 1.7,
+      "br_sb": 1.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "fulmar_mk2"
     },
     {
       "name": "fury mk1",
@@ -23129,6 +23171,20 @@
       "source_id": "saab_ja37di_f21"
     },
     {
+      "name": "saab jas39 pre serie",
+      "nation": "Suecia",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 8,
+      "br": 13,
+      "br_ab": 13,
+      "br_sb": 13,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "saab_jas39_pre_serie"
+    },
+    {
       "name": "saab jas39a",
       "nation": "Suecia",
       "type": "fighter",
@@ -26249,6 +26305,20 @@
       "availability": "regular",
       "source": "WT Vehicles API",
       "source_id": "mig-21_s"
+    },
+    {
+      "name": "su 15tm",
+      "nation": "URSS",
+      "type": "fighter",
+      "category": "aircraft",
+      "rank": 6,
+      "br": 9.7,
+      "br_ab": 9.7,
+      "br_sb": 9.7,
+      "role": "Caza",
+      "availability": "regular",
+      "source": "WT Vehicles API",
+      "source_id": "su_15tm"
     },
     {
       "name": "yak-28b",
